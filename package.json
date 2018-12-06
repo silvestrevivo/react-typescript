@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "http-server"
+    "start": "http-server",
+    "dev": "concurrently \"npm run build\" \"npm start\""
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "dependencies": {
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",
+    "concurrently": "^4.1.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "ts-loader": "^5.3.1",
